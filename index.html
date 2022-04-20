@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>IP Address Tracker</h1>
+      </div>
+
+      <div class="input-user">
+        <input type="text" placeholder="Search for any IP address or domain" class="finding" />
+        <button class="button-finding"><img src="images/icon-arrow.svg" alt="arrow" /></button>
+      </div>
+
+      <div class="info">
+        <div class="sub-info ip-address">
+          <span>IP ADDRESS</span>
+          <h1 class="ip-result">8.8.8.8.</h1>
+        </div>
+        <div class="sub-info location">
+          <span>LOCATION</span>
+          <h1 class="location-result">Mountain View , California</h1>
+        </div>
+        <div class="sub-info time-zone">
+          <span>TIMEZONE</span>
+          <h1 class="timezone-result">UTC -07:00</h1>
+        </div>
+        <div class="sub-info esp">
+          <span>ISP</span>
+          <h1 class="isp-result">Google LLC</h1>
+        </div>
+      </div>
+    </div>
+    <div id="map" class="map-container"></div>
+
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
